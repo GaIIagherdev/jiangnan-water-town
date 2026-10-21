@@ -1,0 +1,14 @@
+{
+  "name": "jiangnan-water-town",
+  "version": "1.0.0",
+  "private": true,
+  "description": "烟雨江南 · an interactive water town built with procedural WebGL scenery",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "preview": "python3 -m http.server 8765 --directory dist"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.5"
+  }
+}

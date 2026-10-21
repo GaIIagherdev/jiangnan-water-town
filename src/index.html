@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#142e32">
+<title>烟雨江南 · 小桥流水人家</title>
+<link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports":{"three":"./vendor/three.module.js","three/addons/":"./vendor/addons/"}}</script>
+</head>
+<body>
+<main id="world" aria-label="可交互的江南水乡三维风景：石拱桥、流水、白墙黛瓦、垂柳与灯火"></main>
+<div class="veil" aria-hidden="true"></div>
+<div id="loading"><div class="loading-mark">江南</div><div class="loading-line"></div><p>等一阵风，等一场梦</p></div>
+<header class="chrome masthead"><a class="wordmark" href="#" aria-label="返回初始画面"><span class="seal">一隅</span><span>山水之间<span class="brand-en">A MOMENT OF STILLNESS</span></span></a><div class="edition">江南纪事<span>一 · 水乡</span></div></header>
+<section class="chrome poetry" aria-label="画作题词"><div class="eyebrow"><span></span>烟 雨 江 南</div><h1>小桥流水<span>人家</span></h1><p id="verse">一水绕人家，半城烟与柳。</p><div class="title-note">愿此间风物，安放片刻心事。</div></section>
+<aside class="chrome vertical-poem" aria-hidden="true">晚来一棹烟波里<span>人间灯火是归途</span></aside>
+<div class="chrome bottom-bar"><div class="controls" role="group" aria-label="选择光景"><span class="control-label">光景</span><button class="scene-choice active" data-scene="dusk" aria-pressed="true">薄暮</button><button class="scene-choice" data-scene="night" aria-pressed="false">月色</button><button class="scene-choice" data-scene="dawn" aria-pressed="false">晨雾</button></div><div class="interaction-hint"><span class="hint-dot"></span>拖动观景 · 滚轮远近 · 点水生涟漪</div><div class="actions"><button id="sound" aria-label="开启溪水环境音" title="溪水环境音"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35"><path d="M4 10v4h4l5 4V6l-5 4H4Z"/><path class="soundwaves" d="M16 8c2 2 2 6 0 8m3-11c4 4 4 10 0 14"/><path class="soundoff" d="m17 10 4 4m0-4-4 4"/></svg></button><button id="save" aria-label="保存当前画面" title="保存当前画面"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35"><path d="M4 7h4l2-3h4l2 3h4v13H4Z"/><circle cx="12" cy="13" r="3.5"/></svg></button><button id="reset" aria-label="重置观景视角" title="重置视角"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.35"><path d="M4 11a8 8 0 1 1 2 7M4 4v7h7"/></svg></button><button id="immerse" class="immerse" aria-label="进入纯净观景模式">入画<span>↗</span></button></div></div>
+<button id="exit-immerse" aria-label="退出纯净观景模式">返回 · Esc</button>
+<div id="toast" role="status" aria-live="polite"></div>
+<div id="fallback" hidden><p>这幅江南画卷需要支持 WebGL 2 的浏览器。</p><p>请用新版 Safari、Chrome 或 Edge 打开。</p></div>
+<script type="module" src="main.js"></script>
+</body></html>
