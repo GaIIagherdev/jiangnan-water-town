@@ -30,6 +30,8 @@ jobs:
           cache: npm
       - name: Install build tools
         run: npm ci
+      - name: Test world generation
+        run: npm test
       - name: Build standalone site
         run: npm run build
       - name: Configure Pages
